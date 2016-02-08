@@ -108,8 +108,6 @@
       promise.then(
           function (response) {
             $scope.story = angular.fromJson(response.data);
-            $scope.stories = new Array();
-            $scope.stories = $scope.story.fields.description.split(',');
             $scope.busy = false;
           },
           function (response) {
