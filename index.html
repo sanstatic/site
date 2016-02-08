@@ -92,13 +92,11 @@
         </div>
     </section>
 
-    <section id="content" ng-controller="ContentCtrl">
+    <section id="content" ng-controller="ContentCtrl" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">{{content.fields.heading}}</h2>
-                    <div style="height:15px" class="col-lg-12"></div>
-                    <h4 class="ng-binding">{{content.fields.description}} <a href="https://app.contentful.com/">{{content.fields.button}}</a>.</h4>
                     <hr class="primary">
                 </div>
             </div>
@@ -134,6 +132,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row">
+            <div style="height:30px" class="col-lg-12"></div>
+            <h4 class="ng-binding">{{content.fields.description}} <a href="https://app.contentful.com/">{{content.fields.button}}</a>.</h4>
         </div>
     </section>
     
