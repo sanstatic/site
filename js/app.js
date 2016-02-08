@@ -21,7 +21,7 @@
       $scope.busy = false;
       $scope.response = null;
 
-      promise = contentful.entries("content_type=menuItem");
+      promise = contentful.entries("content_type=menuItem&order=fields.order");
 
       promise.then(
           function (response) {
