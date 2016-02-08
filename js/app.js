@@ -144,6 +144,29 @@
 
     angular
     .module('app')
+    .controller('DesignCtrl', function ($scope, contentful) {
+
+      var promise;
+
+      $scope.busy = false;
+      $scope.response = null;
+
+      promise = contentful.entry('4lyRGg3ZmM6IgIe8AMg06C');
+
+      promise.then(
+          function (response) {
+            $scope.design = angular.fromJson(response.data);
+            $scope.busy = false;
+          },
+          function (response) {
+            $scope.busy = false;
+          }
+        )
+
+    });
+
+    angular
+    .module('app')
     .controller('StartCtrl', function ($scope, contentful) {
 
       var promise;
