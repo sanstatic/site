@@ -257,11 +257,15 @@
                     <hr class="primary">
                     <p>{{contact.fields.description}}</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
+                <div class="col-lg-2 col-lg-offset-2 text-center">
+                    <i style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;" class="fa fa-question-circle fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:{{contact.fields.questionaireLink}}">{{contact.fields.questionaire}}</a></p>
+                </div>
+                <div class="col-lg-2 col-lg-offset-1 text-center">
                     <i style="visibility: visible; animation-name: bounceIn;" class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p>{{contact.fields.phone}}</p>
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-2 col-lg-offset-1 text-center">
                     <i style="visibility: visible; animation-delay: 0.1s; animation-name: bounceIn;" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                     <p><a href="mailto:{{contact.fields.email}}">{{contact.fields.email}}</a></p>
                 </div>
